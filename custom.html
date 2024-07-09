@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贵州习俗</title>
+    <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(243, 230, 241);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .shell {
+            width: 80%;
+            height: 550px;
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .box {
+            flex: 1;
+            overflow: hidden;
+            transition: .5s;
+            margin: 0 20px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+            border-radius: 20px;
+            border: 10px solid #fff;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box > a {
+            display: block;
+            width: 100%;
+            height: 85%;
+        }
+
+        .box > a > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .5s;
+        }
+
+        .box > span {
+            font: 200 30px '优设标题黑';
+            text-align: center;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box:hover {
+            flex-basis: 40%;
+        }
+
+        .box:hover > a > img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .content {
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .section-content {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <div class="left">
+            <a href="./main.html"><img src="./img/2.png" alt="白雀名片" style="width: 55px; height:auto;"></a>
+        </div>
+        <div class="right">
+            <a href="./index.html">首页</a>
+            <a href="./index2.html">关于贵州</a>
+            <a href="./FG.html">贵州景点</a>
+            <a href="./custom.html">贵州风俗</a>
+            <a href="./food.html">美食推荐</a>
+            <a href="./thing.html">上分大事</a>
+        </div>
+    </div>
+
+    <!-- 手风琴风格模块 -->
+    <div class="shell">
+        <div class="box">
+            <a href="link1.html"><img src="./img/1.jpg" alt="民族风情"></a>
+            <span>民族风情</span>
+        </div>
+        <div class="box">
+            <a href="link1.html"><img src="./img/05.png" alt="民族节日"></a>
+            <span>民族节日</span>
+        </div>
+        <div class="box">
+            <a href="link1.html"><img src="./img/03.png" alt="民族歌舞"></a>
+            <span>民族歌舞</span>
+        </div>
+        <div class="box">
+            <a href="link1.html"><img src="./img/02.png" alt="其他"></a>
+            <span>其他</span>
+        </div>
+    </div>
+
+    <!-- 文字内容 -->
+    <div class="content">
+        <div class="section">
+            <div class="section-title">节日</div>
+            <div class="section-content">
+                据不完全统计，全省少数民族的传统节日有1000多个，集会地点1000多个。著名的：有苗族的“姊妹节”“四月八”“龙舟节”“芦笙节”；布依族的“查白歌节”；侗族的“歌酒节”；彝族的“赛马节”“火把节”；土家族和仡佬族的“吃新节”；水族的“端节”“卯节”等。
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">歌舞</div>
+            <div class="section-content">
+                贵州是一个歌舞的海洋，民族歌舞绚丽多姿。苗族群众有高亢激昂、热情奔放的“飞歌”，有低回委婉、优美抒情的“游方歌”和质朴庄重的“古歌”“酒歌”；有芦笙舞、木鼓舞、踩鼓舞等，动作潇洒，风格纯朴，感情细腻，舞姿活泼。侗族“大歌”的歌声宏亮，气势磅礴，曲调庄严，音域宽阔，反映了侗族人民坚强、豪迈的性格。黔南、黔西南的布依族舞蹈有几十种，歌有大调、小调、大歌、小歌等，且注意押韵，有“有歌都有韵，无韵不成歌”之说。水族的铜鼓舞、斗牛舞、狮子舞、龙舞等亦颇有特色。黔东北的土家族酷爱唱歌，有哭嫁歌、伴嫁歌、酒歌、情歌、劳动歌、祝福歌等。民族戏曲是民族风情的精华，主要有苗族高台戏、侗戏、布依戏、傩戏等。地戏和傩戏被誉为“古代戏剧的活化石”。以芦笙音乐舞蹈为代表的“笙文化”，特别是无音乐伴奏的侗族大歌，在国际音乐舞蹈台上深受赞誉；以雷山郎德寨为代表的铜鼓文化，既是青铜文化的组成部分，又是苗族文化的主要内容，在那里可欣赏“铜鼓坪”“莽铜芦笙铜鼓舞”，将苗族文化中的“鱼文化”“鼓文化”“笙文化”等丰富多彩的文化内涵融为一体。少数民族独具风格的歌舞，是中国民族文化百花园中的又一个惊喜。
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">麻将玩法</div>
+            <div class="section-content">
+                <h3>捉鸡麻将</h3>
+                <p><strong>受欢迎地区：</strong>全贵州省</p>
+                <p><strong>玩法：</strong>捉鸡麻将使用108张牌（去掉字牌），玩家人数为3-4人。庄家起手14张牌，闲家13张牌。可以摸牌、碰牌、杠牌和胡牌，但不能吃牌。捉鸡麻将在普通麻将基础上添加了“鸡”、“豆”、“通行证”等特色元素。鸡分为“幺鸡”和“翻鸡”。幺鸡是1条，翻鸡是根据翻开的牌顺位+1的那张牌。例如，翻开5万，则6万为鸡。捉鸡麻将中的“杠”称为“豆”，只有在有豆的情况下才能胡任何人的牌，否则只能自摸。自摸胡牌，其他3家都要付；点胡，点炮者单独付。不同牌型有不同倍数的计分，例如大对子5倍，小七对10倍，清一色10倍等。</p>
+    
+                <h3>贵阳麻将</h3>
+                <p><strong>受欢迎地区：</strong>贵阳市及周边地区</p>
+                <p><strong>玩法：</strong>贵阳麻将使用108张牌，玩家人数为4人。庄家起手14张牌，闲家13张牌。可以摸牌、碰牌、杠牌和胡牌，但不能吃牌。贵阳麻将有“冲锋鸡”、“责任鸡”等特色玩法。冲锋鸡是玩家打出的第一张幺鸡，结算时加倍计算。责任鸡是如果玩家打出的幺鸡被其他玩家碰走，则称为责任鸡，结算时打出鸡牌的玩家需多付1倍。</p>
+    
+                <h3>遵义麻将</h3>
+                <p><strong>受欢迎地区：</strong>遵义市及周边地区</p>
+                <p><strong>玩法：</strong>遵义麻将使用108张牌，玩家人数为4人。庄家起手14张牌，闲家13张牌。可以摸牌、碰牌、杠牌和胡牌，但不能吃牌。遵义麻将有“金鸡”、“银鸡”等特色玩法。金鸡是翻开的牌为9条时，幺鸡为金鸡，结算时1只鸡为2倍。银鸡是翻开的牌为特定牌型时（如7筒和8筒），称为银鸡，结算时有特殊规则。</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>
+

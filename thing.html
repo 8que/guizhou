@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
+    <title>上分_贵州</title>
+    <style>
+        /* 视频样式 */
+        .video-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            animation: fadeIn 6s forwards;
+            margin-top: 20px;
+            /* 设置视频和导航栏的距离 */
+            position: relative;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        video {
+            width: 70%;
+            height: auto;
+            position: relative;
+        }
+
+        /* 播放/暂停按钮样式 */
+        .play-pause-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: opacity 1s;
+            opacity: 0;
+        }
+
+        video:hover+.play-pause-btn {
+            display: flex;
+            opacity: 1;
+        }
+
+        .video-container:hover .play-pause-btn {
+            display: flex;
+        }
+
+        .video-container:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <div class="left">
+            <a href="./main.html"><img src="./img/2.png" alt="白雀名片" style="width: 55px; height:auto;"></a>
+        </div>
+        <div class="right">
+            <a href="./index.html">首页</a>
+            <a href="./index2.html">关于贵州</a>
+            <a href="./FG.html">贵州景点</a>
+            <a href="./custom.html">贵州风俗</a>
+            <a href="./food.html">美食推荐</a>
+            <a href="#about">上分大事</a>
+        </div>
+    </div>
+
+    <!-- 视频容器 -->
+    <div class="video-container">
+        <video id="intro-video" autoplay>
+            <source src="./video/video_1.mp4" type="video/mp4">
+            您的浏览器不支持视频播放。
+        </video>
+        <button class="play-pause-btn" id="play-pause-btn">⏸</button>
+    </div>
+
+    <div class="video-description">
+        <h2>英雄可以受委屈，但是你不能踩我的切尔西</h2>
+        <p>“英雄可以受委屈，但是你不能踩我的切尔西”是一个网络流行梗，源自短视频平台上的搞笑视频。这个梗的背景和含义如下：</p>
+        <h3>背景</h3>
+        <p>这个梗出自短视频网红成有才和皮小浪的一段视频。在视频中，皮小浪穿着一双金色的切尔西靴子，而成有才不小心踩到了他的靴子。皮小浪因此开启了“疯狂变身模式”，并配文“SUPREME至高无上”。</p>
+        <h3>含义</h3>
+        <p>切尔西靴子是一种时尚的靴子，因其尖尖的鞋头和优雅的外形而受到许多人的喜爱。视频中的台词“英雄可以受委屈，但是你不能踩我的切尔西”表达了一种幽默的夸张，意思是即使英雄可以忍受委屈，但对他来说，踩到他的切尔西靴子是不可容忍的。</p>
+        <p>这个梗迅速在网络上走红，成为许多人用来调侃和表达自己对某些事物特别在意的方式。</p>
+    </div>
+
+    <script>
+        // 视频播放完后暂停
+        const video = document.getElementById('intro-video');
+        const playPauseBtn = document.getElementById('play-pause-btn');
+
+        video.addEventListener('ended', function () {
+            this.pause();
+            playPauseBtn.textContent = '⏯';
+        });
+
+        // 播放/暂停按钮功能
+        playPauseBtn.addEventListener('click', function () {
+            if (video.paused) {
+                video.play();
+                this.textContent = '⏸';
+            } else {
+                video.pause();
+                this.textContent = '⏯';
+            }
+        });
+    </script>
+</body>
+
+</html>

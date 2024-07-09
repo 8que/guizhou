@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅游网页</title>
+    <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
+    <link rel="stylesheet" type="text/css" href="CSS/player.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to bottom right, #abc4ff, #b6ccfe, #c1d3fe, #ccdbfd, #d7e3fc, #e2eafc, #edf2fb);
+            /* 更换主题色 */
+        }
+
+        /* 轮播图样式 */
+        .carousel {
+            position: relative;
+            max-width: 800px;
+            /* 调整轮播图的宽度 */
+            margin: auto;
+        }
+
+        .carousel-item {
+            display: none;
+            width: 100%;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            /* 保持图片比例 */
+        }
+
+        .carousel-item.active {
+            display: block;
+        }
+
+        /* 轮播图指示器样式 */
+        .carousel-indicators {
+            text-align: center;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+        }
+
+        .carousel-indicators span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 2px;
+            background-color: rgba(187, 187, 187, 0.8);
+            /* 半透明效果 */
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .carousel-indicators .active {
+            background-color: rgba(113, 113, 113, 0.8);
+            /* 半透明效果 */
+        }
+
+        /* 轮播图按钮样式 */
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            /* 半透明效果 */
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .carousel-button.left {
+            left: 10px;
+        }
+
+        .carousel-button.right {
+            right: 10px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        /* 内容样式 */
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #333;
+        }
+
+        .text-section {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .image-section {
+            flex: 1;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+        }
+
+        .quick-links {
+            background-color: #d7e3fc;
+            /* 更换主题色 */
+            /* 半透明效果 */
+        }
+
+        .quick-links a {
+            background-color: #ccdbfd;
+            /* 更换主题色 */
+            /* 半透明效果 */
+        }
+
+        .quick-links a:hover {
+            background-color: #d7e3fc;
+            /* 更换主题色 */
+            /* 半透明效果 */
+        }
+
+        .scenic-spot {
+            background-color: #fff;
+        }
+
+        .scenic-spot .description a {
+            background-color: #ccdbfd;
+            /* 更换主题色 */
+            /* 半透明效果 */
+        }
+
+        .scenic-spot .description a:hover {
+            background-color: #d7e3fc;
+            /* 更换主题色 */
+            /* 半透明效果 */
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <div class="left">
+            <a href="./main.html"><img src="./img/2.png" alt="白雀名片" style="width: 55px; height:auto;"></a>
+        </div>
+        <div class="right">
+            <a href="./index.html">首页</a>
+            <a href="./index2.html">关于贵州</a>
+            <a href="./FG.html">贵州景点</a>
+            <a href="./custom.html">贵州风俗</a>
+            <a href="./food.html">美食推荐</a>
+            <a href="#about">上分大事</a>
+        </div>
+    </div>
+
+    <!-- 轮播图模块 -->
+    <div class="carousel">
+        <div class="carousel-item active"><img src="./img/01.png" alt="景区1"></div>
+        <div class="carousel-item"><img src="./img/02.png" alt="景区2"></div>
+        <div class="carousel-item"><img src="./img/03.png" alt="景区3"></div>
+        <div class="carousel-item"><img src="./img/04.png" alt="景区4"></div>
+        <div class="carousel-item"><img src="./img/05.png" alt="景区5"></div>
+        <button class="carousel-button left" onclick="showPrevItem()">❮</button>
+        <button class="carousel-button right" onclick="showNextItem()">❯</button>
+        <div class="carousel-indicators">
+            <span class="active" onclick="currentItem(0)"></span>
+            <span onclick="currentItem(1)"></span>
+            <span onclick="currentItem(2)"></span>
+            <span onclick="currentItem(3)"></span>
+            <span onclick="currentItem(4)"></span>
+        </div>
+    </div>
+
+    <!-- 景区介绍 -->
+    <div class="content">
+        <div class="text-section">
+            <h2>贵州</h2>
+            <p>贵州，这片神秘而美丽的土地，宛如一颗镶嵌在中国西南的璀璨明珠。这里山峦叠翠，河流蜿蜒，仿佛大自然的画笔在这片土地上尽情挥洒。
+            </p>
+            <p>贵州省，简称“黔”或“贵”，位于中国西南的东南部，地处云贵高原。贵州东接湖南，南邻广西，西连云南，北接四川和重庆。省会是贵阳市。</p>
+        </div>
+        <div class="image-section">
+            <img src="./img/1.jpg" alt="娄山关">
+        </div>
+    </div>
+
+    <div class="video-container">
+        <video id="intro-video">
+            <source src="./video/贵州.mp4" type="video/mp4">
+            您的浏览器不支持视频播放。
+        </video>
+        <button class="play-pause-btn" id="play-pause-btn">⏸</button>
+    </div>
+
+    <!-- 尾栏 -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <a href="#home">开发者留言</a>
+            </div>
+            <div class="footer-section contact">
+                <h2>联系我吧！<a href="info@guizhou.com">info@guizhou.com</a> </h2>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        //轮播图//
+        let currentIndex = 0;
+        const items = document.querySelectorAll('.carousel-item');
+        const indicators = document.querySelectorAll('.carousel-indicators span');
+        const totalItems = items.length;
+
+        function showItem(index) {
+            items[currentIndex].classList.remove('active');
+            indicators[currentIndex].classList.remove('active');
+            currentIndex = index;
+            items[currentIndex].classList.add('active');
+            indicators[currentIndex].classList.add('active');
+        }
+
+        function showNextItem() {
+            showItem((currentIndex + 1) % totalItems);
+        }
+
+        function showPrevItem() {
+            showItem((currentIndex - 1 + totalItems) % totalItems);
+        }
+
+        function currentItem(index) {
+            showItem(index);
+        }
+
+        setInterval(showNextItem, 3000);
+
+        // 视频播放完后暂停
+        const video = document.getElementById('intro-video');
+        const playPauseBtn = document.getElementById('play-pause-btn');
+
+        video.addEventListener('ended', function () {
+            this.pause();
+            playPauseBtn.textContent = '⏯';
+        });
+
+        // 播放/暂停按钮功能
+        playPauseBtn.addEventListener('click', function () {
+            if (video.paused) {
+                video.play();
+                this.textContent = '⏸';
+            } else {
+                video.pause();
+                this.textContent = '⏯';
+            }
+        });
+
+        // 防止页面加载时自动滚动到视频位置
+        window.addEventListener('load', function () {
+            window.scrollTo(0, 0);
+        });
+    </script>
+</body>
+
+</html>

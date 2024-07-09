@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贵州特色小吃</title>
+    <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #f0f8ff;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .tabs a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .tabs a:hover,
+        .tabs a.active {
+            background-color: #45a049;
+        }
+
+        .tabs a.active::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #45a049;
+            transition: width 0.3s;
+        }
+
+        .tabs a.active::after {
+            width: 100%;
+        }
+
+        .content {
+            padding: 20px;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .content.active {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            opacity: 1;
+        }
+
+        .product {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product .description {
+            padding: 20px;
+        }
+
+        .product .description h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .product .description p {
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar"><!-- 导航栏 -->
+        <div class="left">
+            <a href="./main.html">logo</a>
+        </div>
+        <div class="right">
+            <a href="./index.html">首页</a>
+            <a href="#news">关于家乡</a>
+            <a href="#contact">家乡景点</a>
+            <a href="#about">美食推荐</a>
+            <a href="#about">贵州趣事</a>
+        </div>
+    </div>
+
+
+    <div class="tabs"><!-- 切换栏 -->
+        <a href="#guiyang" onclick="showContent('guiyang')">贵阳</a>
+        <a href="#liupanshui" onclick="showContent('liupanshui')">六盘水</a>
+        <a href="#zunyi" onclick="showContent('zunyi')">遵义</a>
+        <a href="#bijie" onclick="showContent('bijie')">毕节</a>
+        <a href="#anshun" onclick="showContent('anshun')">安顺</a>
+        <a href="#tongren" onclick="showContent('tongren')">铜仁</a>
+        <a href="#qianxinan" onclick="showContent('qianxinan')">黔西南</a>
+    </div>
+
+    <!-- 内容 -->
+    <div class="content active" id="guiyang"><!-- 贵阳特色小吃展示 -->
+        <div class="product">
+            <img src="./img/food/gysty.jpg" alt="贵阳酸汤鱼">
+            <div class="description">
+                <h3>贵阳酸汤鱼</h3>
+                <p>这是新添加的贵阳特色小吃的描述。</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="./img/food/gylzj.jpg" alt="贵阳辣子鸡">
+            <div class="description">
+                <h3>贵阳辣子鸡</h3>
+                <p>这是新添加的贵阳特色小吃的描述。</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="./img/food/zheergclr.jpg" alt="折耳根炒腊肉">
+            <div class="description">
+                <h3>折耳根炒腊肉</h3>
+                <p>这是新添加的贵阳特色小吃的描述。</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="./img/food/pjf.jpg" alt="片鸡粉">
+            <div class="description">
+                <h3>片鸡粉</h3>
+                <p>这是新添加的贵阳特色小吃的描述。</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="./img/food/csf.jpg" alt="脆哨粉">
+            <div class="description">
+                <h3>脆哨粉</h3>
+                <p>这是新添加的贵阳特色小吃的描述。</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="./img/food/wanergao.jpg" alt="碗耳糕">
+            <div class="description">
+                <h3>碗耳糕</h3>
+                <p>这是新添加的贵阳特色小吃的描述。</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="./img/food/lianaidf.jpg" alt="恋爱豆腐">
+            <div class="description">
+                <h3>恋爱豆腐</h3>
+                <p>这是新添加的贵阳特色小吃的描述。</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="./img/food/yybb.jpg" alt="洋芋粑粑">
+            <div class="description">
+                <h3>洋芋粑粑</h3>
+                <p>这是新添加的贵阳特色小吃的描述。</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="./img/food/qydf.jpg" alt="青岩豆腐">
+            <div class="description">
+                <h3>青岩豆腐</h3>
+                <p>这是新添加的贵阳特色小吃的描述。</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="./img/food/cwm.jpg" alt="贵阳肠旺面">
+            <div class="description">
+                <h3>贵阳肠旺面</h3>
+                <p>贵阳肠旺面是贵州极负盛名的一种风味小吃，以色、香、味“三绝”而著称，具有血嫩、面脆、辣香、汤鲜的风味和口感。</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="./img/food/gysww.jpg" alt="贵阳丝娃娃">
+            <div class="description">
+                <h3>贵阳丝娃娃</h3>
+                <p>贵阳丝娃娃，别名素春卷，是贵阳一种常见的地方传统小吃，菜丝切得极细，酸辣爽口，开胃健脾。</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="./img/04.png" alt="贵阳米豆腐">
+            <div class="description">
+                <h3>贵阳米豆腐</h3>
+                <p>贵阳米豆腐是贵州著名的少数民族小吃，润滑鲜嫩、酸辣可口，是贵州传统的夏令清凉小吃。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="zunyi"><!-- 遵义特色小吃展示 -->
+        <div class="product">
+            <img src="./img/zyyrf.jpg" alt="遵义羊肉粉">>
+            <div class="description">
+                <h3>遵义羊肉粉</h3>
+                <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/nbhgb.jpg" alt="南白黄糕粑">
+            <div class="description">
+                <h3>南白黄糕粑</h3>
+                <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/yxlf.jpg" alt="鸭溪凉粉">
+            <div class="description">
+                <h3>鸭溪凉粉</h3>
+                <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/liuermamp.jpg" alt="刘二妈米皮">>
+            <div class="description">
+                <h3>刘二妈米皮</h3>
+                <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/zyjdg.jpg" alt="遵义鸡蛋糕">
+            <div class="description">
+                <h3>遵义鸡蛋糕</h3>
+                <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/dbyy.jpg" alt="蛋包洋芋">
+            <div class="description">
+                <h3>蛋包洋芋</h3>
+                <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/lbzeg.jpg" alt="凉拌折耳根">>
+            <div class="description">
+                <h3>凉拌折耳根</h3>
+                <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/zydhm.jpg" alt="遵义豆花面">
+            <div class="description">
+                <h3>遵义豆花面</h3>
+                <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/wjdfy.jpg" alt="乌江豆腐鱼">
+            <div class="description">
+                <h3>乌江豆腐鱼</h3>
+                <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/fyhj.jpg" alt="蜂岩黄饺">>
+            <div class="description">
+                <h3>蜂岩黄饺</h3>
+                <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/wjyzty.jpg" alt="吴家油炸汤圆">
+            <div class="description">
+                <h3>吴家油炸汤圆</h3>
+                <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/wjy.jpg" alt="乌江鱼">
+            <div class="description">
+                <h3>乌江鱼</h3>
+                <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="liupanshui"><!-- 六盘水特色小吃展示 -->
+        <div class="product">
+            <img src="./img/food/pxht.jpg" alt="盘县火腿">
+            <div class="description">
+                <h3>盘县火腿</h3>
+                <p>六盘水小吃</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="./img/food/fz.jpg" alt="风猪">
+            <div class="description">
+                <h3>风猪</h3>
+                <p>六盘水小吃</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/scyrf.jpg" alt="水城羊肉粉">
+            <div class="description">
+                <h3>水城羊肉粉</h3>
+                <p>六盘水小吃</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/kjcsm.jpg" alt="康家脆哨面">
+            <div class="description">
+                <h3>康家脆哨面</h3>
+                <p>六盘水小吃</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/mjbkj.jpg" alt="苗家八块鸡">
+            <div class="description">
+                <h3>苗家八块鸡</h3>
+                <p>六盘水小吃</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/yjm.jpg" alt="岩脚面">
+            <div class="description">
+                <h3>六盘水</h3>
+                <p>岩脚面</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/chtyrf.jpg" alt="“尝回头”羊肉粉">
+            <div class="description">
+                <h3>“尝回头”羊肉粉</h3>
+                <p>六盘水小吃</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/lrlg.jpg" alt="老城烙锅">
+            <div class="description">
+                <h3>老城烙锅</h3>
+                <p>六盘水小吃</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/ylqzr.jpg" alt="夜郎炝醉肉">
+            <div class="description">
+                <h3>夜郎炝醉肉</h3>
+                <p>六盘水小吃</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/glf.jpg" alt="怪噜饭">
+            <div class="description">
+                <h3>怪噜饭</h3>
+                <p>六盘水小吃</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="bijie"><!-- 毕节特色小吃展示 -->
+        <div class="product">
+            <img src="./img/food/bjty.jpg" alt="毕节汤圆">
+            <div class="description">
+                <h3>毕节汤圆</h3>
+                <p>毕节汤圆用上等新糯米磨制成米浆，过滤晒干而成精制汤圆米粉，个小、皮薄、馅多、色鲜味美。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/zmc.jpg" alt="猪米肠">
+            <div class="description">
+                <h3>猪米肠</h3>
+                <p>毕节汤圆用上等新糯米磨制成米浆，过滤晒干而成精制汤圆米粉，个小、皮薄、馅多、色鲜味美。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/frtj.jpg" alt="芙蓉蹄筋">
+            <div class="description">
+                <h3>芙蓉蹄筋</h3>
+                <p>毕节汤圆用上等新糯米磨制成米浆，过滤晒干而成精制汤圆米粉，个小、皮薄、馅多、色鲜味美。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/wszsj.jpg" alt="王傻子烧鸡">
+            <div class="description">
+                <h3>王傻子烧鸡</h3>
+                <p>毕节汤圆用上等新糯米磨制成米浆，过滤晒干而成精制汤圆米粉，个小、皮薄、馅多、色鲜味美。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/bjcdfg.jpg" alt="毕节臭豆腐干">
+            <div class="description">
+                <h3>毕节臭豆腐干</h3>
+                <p>毕节汤圆用上等新糯米磨制成米浆，过滤晒干而成精制汤圆米粉，个小、皮薄、馅多、色鲜味美。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/wzj.jpg" alt="王猪脚">
+            <div class="description">
+                <h3>王猪脚</h3>
+                <p>毕节汤圆用上等新糯米磨制成米浆，过滤晒干而成精制汤圆米粉，个小、皮薄、馅多、色鲜味美。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/zsdj.jpg" alt="竹荪炖鸡">
+            <div class="description">
+                <h3>竹荪炖鸡</h3>
+                <p>毕节汤圆用上等新糯米磨制成米浆，过滤晒干而成精制汤圆米粉，个小、皮薄、馅多、色鲜味美。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/ssyrf.jpg" alt="沙士羊肉粉">
+            <div class="description">
+                <h3>沙士羊肉粉</h3>
+                <p>毕节汤圆用上等新糯米磨制成米浆，过滤晒干而成精制汤圆米粉，个小、皮薄、馅多、色鲜味美。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/ylbgj.jpg" alt="夜郎八卦鸡">
+            <div class="description">
+                <h3>夜郎八卦鸡</h3>
+                <p>毕节汤圆用上等新糯米磨制成米浆，过滤晒干而成精制汤圆米粉，个小、皮薄、馅多、色鲜味美。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/wlqs.jpg" alt="威宁荞酥">
+            <div class="description">
+                <h3>威宁荞酥</h3>
+                <p>毕节汤圆用上等新糯米磨制成米浆，过滤晒干而成精制汤圆米粉，个小、皮薄、馅多、色鲜味美。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/wlht.jpg" alt="威宁火腿">
+            <div class="description">
+                <h3>威宁火腿</h3>
+                <p>毕节汤圆用上等新糯米磨制成米浆，过滤晒干而成精制汤圆米粉，个小、皮薄、馅多、色鲜味美。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/wlcqf.jpg" alt="威宁炒荞饭">
+            <div class="description">
+                <h3>威宁炒荞饭</h3>
+                <p>毕节汤圆用上等新糯米磨制成米浆，过滤晒干而成精制汤圆米粉，个小、皮薄、馅多、色鲜味美。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="anshun"><!-- 安顺特色小吃展示 -->
+    </div>
+
+    <div class="content" id="tongren"><!-- 铜仁特色小吃展示 -->
+        <div class="product">
+            <img src="./img/food/szy.jpg" alt="酸扎鱼">
+            <div class="description">
+                <h3>酸扎鱼</h3>
+                <p>花溪牛肉粉发源于贵阳花溪地区，其独特的汤料由多种名贵中草药精心制作，汤鲜味美，肉香。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/tczmblf.jpg" alt="糖醋芝麻冰凉粉">
+            <div class="description">
+                <h3>糖醋芝麻冰凉粉</h3>
+                <p>花溪牛肉粉发源于贵阳花溪地区，其独特的汤料由多种名贵中草药精心制作，汤鲜味美，肉香。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/mdg.jpg" alt="马打滚">
+            <div class="description">
+                <h3>马打滚</h3>
+                <p>花溪牛肉粉发源于贵阳花溪地区，其独特的汤料由多种名贵中草药精心制作，汤鲜味美，肉香。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/hsblj.jpg" alt="红烧板栗鸭">
+            <div class="description">
+                <h3>红烧板栗鸭</h3>
+                <p>花溪牛肉粉发源于贵阳花溪地区，其独特的汤料由多种名贵中草药精心制作，汤鲜味美，肉香。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/trsf.jpg" alt="铜仁社饭">
+            <div class="description">
+                <h3>铜仁社饭</h3>
+                <p>花溪牛肉粉发源于贵阳花溪地区，其独特的汤料由多种名贵中草药精心制作，汤鲜味美，肉香。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/htb.jpg" alt="花甜粑">
+            <div class="description">
+                <h3>花甜粑</h3>
+                <p>花溪牛肉粉发源于贵阳花溪地区，其独特的汤料由多种名贵中草药精心制作，汤鲜味美，肉香。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/gbf.jpg" alt="锅巴粉">
+            <div class="description">
+                <h3>锅巴粉</h3>
+                <p>花溪牛肉粉发源于贵阳花溪地区，其独特的汤料由多种名贵中草药精心制作，汤鲜味美，肉香。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/yhlmbz.jpg" alt="沿河糯米包子">
+            <div class="description">
+                <h3>沿河糯米包子</h3>
+                <p>花溪牛肉粉发源于贵阳花溪地区，其独特的汤料由多种名贵中草药精心制作，汤鲜味美，肉香。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/yzb.jpg" alt="油炸泡">
+            <div class="description">
+                <h3>油炸泡</h3>
+                <p>花溪牛肉粉发源于贵阳花溪地区，其独特的汤料由多种名贵中草药精心制作，汤鲜味美，肉香。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="qianxinan"><!-- 黔西南特色小吃展示 -->
+        <div class="product">
+            <img src="./img/food/gzm.jpg" alt="杠子面">
+            <div class="description">
+                <h3>杠子面</h3>
+                <p>都匀冲冲糕源于黔南布依族苗族自治州独山县，是用糯米制作成的一种食物，质柔软香甜，地方味浓厚。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/sbt.jpg" alt="刷把头">
+            <div class="description">
+                <h3>刷把头</h3>
+                <p>都匀冲冲糕源于黔南布依族苗族自治州独山县，是用糯米制作成的一种食物，质柔软香甜，地方味浓厚。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/qzlsjllr.jpg" alt="清镇凉水井老腊肉">
+            <div class="description">
+                <h3>清镇凉水井老腊肉</h3>
+                <p>都匀冲冲糕源于黔南布依族苗族自治州独山县，是用糯米制作成的一种食物，质柔软香甜，地方味浓厚。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/xyyrf.jpg" alt="兴义羊肉粉">
+            <div class="description">
+                <h3>兴义羊肉粉</h3>
+                <p>都匀冲冲糕源于黔南布依族苗族自治州独山县，是用糯米制作成的一种食物，质柔软香甜，地方味浓厚。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/jrty.jpg" alt="鸡肉汤圆">
+            <div class="description">
+                <h3>鸡肉汤圆</h3>
+                <p>都匀冲冲糕源于黔南布依族苗族自治州独山县，是用糯米制作成的一种食物，质柔软香甜，地方味浓厚。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/gb.jpg" alt="糕粑">
+            <div class="description">
+                <h3>糕粑</h3>
+                <p>都匀冲冲糕源于黔南布依族苗族自治州独山县，是用糯米制作成的一种食物，质柔软香甜，地方味浓厚。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/zb.jpg" alt="抓饼">
+            <div class="description">
+                <h3>抓饼</h3>
+                <p>都匀冲冲糕源于黔南布依族苗族自治州独山县，是用糯米制作成的一种食物，质柔软香甜，地方味浓厚。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/sht.jpg" alt="三合汤">
+            <div class="description">
+                <h3>三合汤</h3>
+                <p>都匀冲冲糕源于黔南布依族苗族自治州独山县，是用糯米制作成的一种食物，质柔软香甜，地方味浓厚。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/ngb.jpg" alt="牛干巴">
+            <div class="description">
+                <h3>牛干巴</h3>
+                <p>都匀冲冲糕源于黔南布依族苗族自治州独山县，是用糯米制作成的一种食物，质柔软香甜，地方味浓厚。</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/food/zfnmf.jpg" alt="贞丰糯米饭">
+            <div class="description">
+                <h3>贞丰糯米饭</h3>
+                <p>都匀冲冲糕源于黔南布依族苗族自治州独山县，是用糯米制作成的一种食物，质柔软香甜，地方味浓厚。</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+        showContent('guiyang');
+    });
+
+    function showContent(id) {
+        const contents = document.querySelectorAll('.content');
+        const tabs = document.querySelectorAll('.tabs a');
+        
+        // 移除所有内容的 active 类
+        contents.forEach(content => {
+            content.classList.remove('active');
+        });
+
+        // 移除所有标签的 active 类
+        tabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+
+        // 添加选中内容的 active 类
+        document.getElementById(id).classList.add('active');
+
+        // 添加选中标签的 active 类
+        document.querySelector(`.tabs a[href="#${id}"]`).classList.add('active');
+    }
+    </script>
+</body>
+
+</html>

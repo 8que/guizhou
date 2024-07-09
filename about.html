@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅游网页</title>
+    <!-- 这是readme页面的css -->
+    <link rel="stylesheet" type="text/css" href="CSS/news.css">
+    <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
+    <style>
+        .readme {
+            height: 180px;
+            position: relative;
+            left: 10%;
+            transform: translate(-50%, 0);
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- readme -->
+    <div class="news">
+        <div class="read">
+            <h1>READ ME — 致亲爱的访客</h1>
+            <ul>
+                <li>1.<strong>欢迎浏览本网页(｡･∀･)ﾉﾞ</strong></li>
+                <li>2.这里是一只白雀（跳转）
+                    <a href="update/update.html" target="_blank">点此查看更新日志</a>
+                </li>
+                <li>3.手机哥带我突发奇想就做了，不是什么难事（</li>
+                <li>4.ฅ(≧▽≦*)ฅ喵~</li>
+                <img src="./img/oiiaioooooiai.gif" class="readme">
+            </ul>
+            <div class="close"><strong>我知道了</strong></div>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <div class="left">
+            <a href="./main.html"><img src="./img/2.png" alt="白雀名片" style="width: 55px; height:auto;"></a>
+        </div>
+        <div class="right">
+            <a href="./index.html">首页</a>
+            <a href="./index2.html">关于贵州</a>
+            <a href="./FG.html">贵州景点</a>
+            <a href="./custom.html">贵州风俗</a>
+            <a href="./food.html">美食推荐</a>
+            <a href="#about">上分大事</a>
+        </div>
+    </div>
+
+    <!-- 借物表 -->
+    <div class="resources">
+        <h2>借物表</h2>
+        <ul>
+            <li>图片来源：<a href="https://m.xiangha.com">香哈网</a></li>
+            <li>图片来源：<a href="http://mp.weixin.qq.com/s?__biz=MzU0NjQxODQ5NQ==&mid=2247554424&idx=1&sn=c7981e1cf0e0b880a66da7699750292d&chksm=fb5faf28cc28263e5fc58c585e909cc5f5cb379911bcdeb2e17447df7b05f2d290c6f940206b&mpshare=1&scene=23&srcid=0707rfxCmnLSCBnb4Csuu9jG&sharer_shareinfo=784d3f5adc81d6a2585641f578b18ecd&sharer_shareinfo_first=784d3f5adc81d6a2585641f578b18ecd#rd">贵州教育发布综合整理自贵州省文化和旅游厅、多彩贵州网</a></li>
+            <li>文案引用：<a href="http://mp.weixin.qq.com/s?__biz=MzU0NjQxODQ5NQ==&mid=2247554424&idx=1&sn=c7981e1cf0e0b880a66da7699750292d&chksm=fb5faf28cc28263e5fc58c585e909cc5f5cb379911bcdeb2e17447df7b05f2d290c6f940206b&mpshare=1&scene=23&srcid=0707rfxCmnLSCBnb4Csuu9jG&sharer_shareinfo=784d3f5adc81d6a2585641f578b18ecd&sharer_shareinfo_first=784d3f5adc81d6a2585641f578b18ecd#rd">贵州教育发布综合整理自贵州省文化和旅游厅、多彩贵州网</a></li>
+            <li>布局参考：<a href="https://space.bilibili.com/266664645?spm_id_from=333.337.0.0"></a>山羊の前端小窝</li>
+            <li>视频转载：<a href="https://space.bilibili.com/1129197064?spm_id_from=333.337.0.0"></a>皮小浪呀</li>
+            <li>视频转载：<a href="https://space.bilibili.com/452215100?spm_id_from=333.337.0.0"></a>贵州共青团—黔小青</li>
+
+        </ul>
+    </div>
+
+    <!-- 友情链接 -->
+    <div class="resources">
+        <h2>友情链接</h2>
+        <ul>
+            <li><a href="https://space.bilibili.com/452215100?spm_id_from=333.337.0.0" target="_blank">贵州共青团—黔小青</a></li>
+            <li><a href="https://example.com" target="_blank">友链2</a></li>
+            <li><a href="https://example.com" target="_blank">友链3</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // 这里是首页readme的js，量少，故不单独放在一个文件里
+        const clo = document.querySelector('.close');
+        const ne = document.querySelector('.news');
+        clo.addEventListener('click', function () {
+            console.log(ne);
+            ne.style.display = 'none';
+        })
+    </script>
+</body>
+
+</html>

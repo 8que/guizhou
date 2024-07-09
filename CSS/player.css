@@ -1,0 +1,57 @@
+ /* 视频样式 */
+.video-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 6s forwards;
+    margin-top: 20px;
+    /* 设置视频和导航栏的距离 */
+    position: relative;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+video {
+    width: 70%;
+    height: auto;
+    position: relative;
+}
+
+/* 播放/暂停按钮样式 */
+.play-pause-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+video:hover+.play-pause-btn {
+    display: flex;
+    opacity: 1;
+}
+
+.video-container:hover .play-pause-btn {
+    display: flex;
+}
+
+.video-container:hover {
+    cursor: pointer;
+}

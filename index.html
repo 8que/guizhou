@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
+    <title>多彩贵州</title>
+    <style>
+        .navbar {
+    background-color: rgba(26, 84, 155, 0.948); /* 更换主题色 */
+    /* 半透明效果 */
+    transition: background-color 0.5s ease;
+    /* 添加过渡效果 */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <div class="left">
+            <a href="./main.html"><img src="./img/2.png" alt="白雀名片"style="width: 55px; height:auto;"></a>
+        </div>
+        <div class="right">
+            <a href="./index.html">首页</a>
+            <a href="./index2.html">关于贵州</a>
+            <a href="./FG.html">贵州景点</a>
+            <a href="./custom.html">贵州风俗</a>
+            <a href="./food.html">美食推荐</a>
+            <a href="#about">上分大事</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="img-one" class="img">
+            <h1 class="fade-in">贵 州</h1>
+        </section>
+        <section class="content-one">
+            <div class="text-box">
+                <div class="cnt">
+                    <h2>风景</h2>
+                    <p>
+                        Time would heal almost all wounds . If your wounds have not been healed up , please wait for a
+                        short while.
+                        Life isn't about waiting for the storm to pass . it's about learning to dance in the rain.
+                    </p>
+                    <p>
+                        <a href="./FG.html" class="btn">启 程</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="content-two">
+            <div class="text-box">
+                <div class="cnt">
+                    <h2>美食</h2>
+                    <p>
+                        Some of us get dipped in flat, some in satin, some in gloss. But every once in a while you find
+                        someone who"s iridescent, and when you do, nothing will ever compare.
+                        We accept both the good and the bad, andwithout uttering a sound, we continue living.
+                    </p>
+                    <p>
+                        <a href="./FG.html" class="btn">启 程</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="content-three">
+            <div class="text-box">
+                <div class="cnt">
+                    <h2>民俗</h2>
+                    <p>
+                        Nobody can go back and start a new beginning , but anyone can start today and make a new ending.
+                        The minute you think of giving up , think of the reason why you held on so long .
+                    </p>
+                    <p>
+                        <a href="./FG.html" class="btn">启 程</a>
+                </div>
+            </div>
+        </section>
+        <section id="img-two" class="img">
+            <div class="text-box">
+                <div class="cnt">
+                    <h2>上分</h2>
+                    <p>
+                        Nobody can go back and start a new beginning , but anyone can start today and make a new ending.
+                        The minute you think of giving up , think of the reason why you held on so long .
+                    </p>
+                    <p>
+                        <a href="./FG.html" class="btn">启 程</a>
+                </div>
+            </div>
+        </section>
+        <section id="footer">FOOTER</section>
+    </div>
+    <script>
+        // JavaScript 代码，用于动态调整导航栏背景颜色
+        window.addEventListener('scroll', function() {
+        var navbar = document.querySelector('.navbar');
+        var scrollPosition = window.scrollY;
+        var containerHeight = document.querySelector('.container').offsetTop;
+        var contentOneHeight = document.querySelector('.content-one').offsetTop;
+        var contentTwoHeight = document.querySelector('.content-two').offsetTop;
+        var contentThreeHeight = document.querySelector('.content-three').offsetTop;
+
+        // 根据滚动位置调整导航栏背景颜色
+        if (scrollPosition >= containerHeight && scrollPosition < contentOneHeight) {
+            navbar.style.backgroundColor = 'rgba(38, 99, 172, 0.3)'; // container 时的颜色
+        } else if (scrollPosition >= contentOneHeight && scrollPosition < contentTwoHeight) {
+            navbar.style.backgroundColor = 'rgba(38, 99, 172, 0.3)'; // content-one 时的颜色
+        } else if (scrollPosition >= contentTwoHeight && scrollPosition < contentThreeHeight) {
+            navbar.style.backgroundColor = 'rgba(174, 168, 164, 0.4)'; // content-two 时的颜色
+        } else if (scrollPosition >= contentThreeHeight) {
+            navbar.style.backgroundColor = 'rgba(147, 149, 143, 0.4)'; // content-three 时的颜色
+        } else {
+            navbar.style.backgroundColor = 'rgba(38, 99, 172, 1)'; // 初始颜色
+        }
+    });
+    </script>
+</body>
+
+</html>

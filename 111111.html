@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贵州旅游景点介绍</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+
+        .navbar {
+            background-color: rgba(0, 109, 119, 0.3);
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(131, 197, 190, 0.8);
+            color: black;
+        }
+
+        .navbar .left {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .quick-links {
+            display: flex;
+            justify-content: center;
+            background-color: #f0f8ff;
+            padding: 10px 0;
+            position: sticky;
+            top: 50px;
+            z-index: 999;
+        }
+
+        .quick-links a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .quick-links a:hover {
+            background-color: #45a049;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #333;
+        }
+
+        .scenic-spot {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .scenic-spot img {
+            width: 440px;
+            height: 330px;
+            object-fit: cover;
+        }
+
+        .scenic-spot .description {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .scenic-spot .description h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .scenic-spot .description p {
+            color: #666;
+        }
+
+        .scenic-spot .description a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .scenic-spot .description a:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 5px;
+            min-width: 150px;
+        }
+
+        .footer-section h2 {
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <div class="left">
+            <a href="./main.html">logo</a>
+        </div>
+        <div class="right">
+            <a href="./CS.HTML">首页</a>
+            <a href="#news">关于家乡</a>
+            <a href="#contact">家乡景点</a>
+            <a href="#about">美食推荐</a>
+            <a href="#about">贵州趣事</a>
+        </div>
+    </div>
+
+    <!-- 快捷跳转按钮 -->
+    <div class="quick-links">
+        <a href="#cooling">清凉避暑</a>
+        <a href="#villages">避世村落</a>
+        <a href="#towns">悠游古镇</a>
+        <a href="#red">红色缅怀</a>
+        <a href="#popular">热门景区</a>
+    </div>
+
+    <!-- 内容 -->
+    <div class="content">
+        <!-- 清凉避暑 -->
+        <div class="section" id="cooling">
+            <h2>清凉避暑</h2>
+            <div class="scenic-spot">
+                <img src="./img/wumeng.jpg" alt="乌蒙大草原">
+                <div class="description">
+                    <h3>乌蒙大草原</h3>
+                    <p>位于六盘水盘州市乌蒙镇与坪地彝族乡境内，是西南地区面积最大、海拔最高的天然草场，年平均气温仅11.1℃。这里有10万亩万紫千红的高原矮杜鹃林，有绿境一般的高原湖泊天池，有极为罕见的自然景观——草原佛光，还有云海奇观、日出日落等景观。</p>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/wanfenghu.jpg" alt="万峰湖">
+                <div class="description">
+                    <h3>万峰湖</h3>
+                    <p>位于兴义市东南部，是兴义国家地质公园的重要组成部分，被称为“野钓天堂”，绝对是游玩山水、坐船垂钓的不二之选。万峰湖沿岸的峰林、石林、溶洞密布，构成众多的景观景点。这里烟波浩渺，树木浓郁，水鸟云集，气候凉爽宜人，重峦叠嶂，一日三景。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 避世村落 -->
+        <div class="section" id="villages">
+            <h2>避世村落</h2>
+            <div class="scenic-spot">
+                <img src="./img/gaopo.jpg" alt="高坡苗乡">
+                <div class="description">
+                    <h3>高坡苗乡</h3>
+                    <p>高坡地如其名，其平均海拔达到了1500米，最高海拔1700米，可以说是贵阳海拔最高的地区之一。这里的云顶草原、皇帝坡等地区已经成为人们露营、看日出日落、欣赏星空和云海的绝佳场所。自驾在高坡的路上，感觉像是到达了“草原天路”，人的心情会变得更加愉悦。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 悠游古镇 -->
+        <div class="section" id="towns">
+            <h2>悠游古镇</h2>
+            <div class="scenic-spot">
+                <img src="./img/qingyan.jpg" alt="青岩古镇">
+                <div class="description">
+                    <h3>青岩古镇</h3>
+                    <p>以石砌墙、以石铺路、以石筑桥……位于贵阳市花溪区的青岩古镇被专家学者们赞誉为“石头的绝唱”，是一座名副其实的“石头城”。青岩古镇建筑依山就势，城墙用巨石筑于悬崖上，保留了众多明清古建筑。这里的古石板小巷是一大特色，在这里感受历史、看石头砌成的风景、拍照都很不错。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 红色缅怀 -->
+        <div class="section" id="red">
+            <h2>红色缅怀</h2>
+            <div class="scenic-spot">
+                <img src="./img/hongpiaodai.jpg"
+            <p>📍红飘带长征数字科技艺术馆</p>
+            <p>红飘带位于贵阳市双龙航空港经济区。由全域行浸数字演艺《红飘带·伟大征程》《红飘带·多彩飞越》两大部分组成。其中，《红飘带·多彩飞越》是8K电影级巨型LED球幕飞行影院的首演剧目，观者犹如飞行于多彩贵州壮美山河之上，纵览旖旎风光。</p>
+            <p>📍息烽集中营革命历史纪念馆</p>
+            <p>息烽集中营位于贵阳市息烽县，是抗战期间国民党坚持“消极抗日、积极反共”的反动政策而设立的关押中共党人和爱国进步人士的最大秘密监狱。参观息烽集中营，犹如重温一部血火交织的历史，革命先烈在黑暗的囚牢里与敌人展开不屈不挠的斗争，他们英雄不屈，谱写出一曲可歌可泣的正气之歌。</p>
+            <p>📍遵义会议会址</p>
+            <p>遵义会议纪念馆位于遵义市红花岗区，包括遵义会议会址和遵义会议陈列馆。遵义会议陈列馆设置有《遵义会议伟大转折》专题陈列，展览以红军长征为主轴线，全面系统、生动详实地展现遵义会议伟大转折历史意义和红军长征、遵义会议、转战贵州的重大历史史实。</p>
+        </div>
+
+        <div id="popular" class="section">
+            <h2>热门景区</h2>
+            <p>📍平塘中国天眼</p>
+            <p>随着“中国天眼”的建设，距其最近的黔南州平塘县克度镇，一跃成为世人瞩目的“天文小镇”。天文小镇设有天文体验馆、时光塔、天幕街、南仁东纪念馆、星际家园、航龙湾、天文时光村等设施，让人踏入小镇就能感受到满满的“科技感”。</p>
+        </div>
+    </div>
+
+    <!-- 尾栏 -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <a href="#home">开发者留言</a>
+            </div>
+            <div class="footer-section contact">
+                <h2>联系我吧！<a href="mailto:info@guizhou.com">info@guizhou.com</a></h2>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 突然想介绍的贵州</p

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贵州景点介绍</title>
+    <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+
+        .quick-links {
+            display: flex;
+            justify-content: center;
+            background-color: #f0f8ff;
+            padding: 10px 0;
+            position: sticky;
+            top: 75px;
+            /* 确保快捷跳转栏在导航栏下方 */
+            z-index: 999;
+        }
+
+        .quick-links a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .quick-links a:hover {
+            background-color: #45a049;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #333;
+        }
+
+        .scenic-spot {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .scenic-spot img {
+            width: 440px;
+            height: 330px;
+            object-fit: cover;
+        }
+
+        .scenic-spot .description {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .scenic-spot .description h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .scenic-spot .description p {
+            color: #666;
+        }
+
+        .scenic-spot .description a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .scenic-spot .description a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <div class="left">
+            <a href="./main.html"><img src="./img/2.png" alt="白雀名片" style="width: 55px; height:auto;"></a>
+        </div>
+        <div class="right">
+            <a href="./index.html">首页</a>
+            <a href="./index2.html">关于贵州</a>
+            <a href="./FG.html">贵州景点</a>
+            <a href="./custom.html">贵州风俗</a>
+            <a href="./food.html">美食推荐</a>
+            <a href="#about">上分大事</a>
+        </div>
+    </div>
+
+    <!-- 快捷跳转按钮 -->
+    <div class="quick-links">
+        <a href="#popular">热门景区</a>
+        <a href="#cooling">清凉避暑</a>
+        <a href="#villages">避世村落</a>
+        <a href="#towns">悠游古镇</a>
+        <a href="#red">红色缅怀</a>
+        <a href="#family">亲子研学</a>
+    </div>
+
+    <!-- 内容 -->
+    <div class="content">
+        <!-- 热门景区 -->
+        <div class="section" id="popular">
+            <h2>热门景区</h2>
+            <div class="scenic-spot">
+                <img src="./img/FG/hgspb.jpg" alt="黄果树瀑布">
+                <div class="description">
+                    <h3>黄果树瀑布</h3>
+                    <p>位于中国贵州省的黄果树瀑布，以其壮观的水势和独特的地质特征吸引了无数游客。
+                        当你站在瀑布前，感受那震耳欲聋的水声和扑面而来的水雾，你会被大自然的力量所震撼。瀑布高约77.8米，宽101米，水流从高处倾泻而下，形成了一幅壮丽的画卷。尤其是在雨季，水量充沛，瀑布显得更加雄伟壮观。
+                        黄果树瀑布的独特之处在于它的水帘洞。这个长达134米的洞穴位于瀑布后方，你可以从洞内外六个方位观赏瀑布，体验到不同角度的美景。这种体验在世界各地的瀑布中是非常罕见的。</p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/lbxqk.jpg" alt="荔波小七孔">
+                <div class="description">
+                    <h3>荔波小七孔</h3>
+                    <p>荔波小七孔景区以其独特的喀斯特地貌和清澈的河流而闻名，位于贵州省黔南州。小七孔景区的名字来源于一座建于清朝道光十五年（1835年）的七孔古石桥。这座桥横跨响水河，桥长40米，宽2.2米，高5.5米，结构玲珑，古色古香
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/fjs.jpg" alt="梵净山">
+                <div class="description">
+                    <h3>梵净山</h3>
+                    <p>梵净山是中国著名的佛教名山，位于贵州省铜仁市。梵净山的名字意为“梵天净土”,无论你是喜欢探险，还是喜欢静静地欣赏自然美景，梵净山都能满足你的需求。</p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/xjqhmz.jpg" alt="西江千户苗寨">
+                <div class="description">
+                    <h3>西江千户苗寨</h3>
+                    <p>西江千户苗寨是世界上最大的苗族聚居村寨，位于贵州省黔东南州。西江千户苗寨由十余个依山而建的自然村寨相连成片，四面环山，梯田依山顺势直连云天，白水河穿寨而过，将西江苗寨一分为二。这里的建筑以木质的吊脚楼为主，层层叠叠，错落有致，展现了苗族独特的建筑风格。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/csdx.jpg" alt="赤水丹霞">
+                <div class="description">
+                    <h3>赤水丹霞</h3>
+                    <p>贵州赤水丹霞国家地质公园位于贵州省赤水市,赤水丹霞地貌以其艳丽的红色砂岩和独特的地质特征闻名于世。这里的丹霞地貌主要以高原峡谷型和山原峡谷型为主，峡谷深切，地势起伏大，形成了许多壮观的景观。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/xywfl.jpg" alt="兴义万峰林">
+                <div class="description">
+                    <h3>兴义万峰林</h3>
+                    <p>位于贵州省黔西南布依族苗族自治州兴义市东南部，万峰林是中国西南三大喀斯特地貌之一。万峰林由近两万座奇峰翠峦组成，气势宏大壮阔，山峰形态奇特，整体造型秀美。这里的峰林根据形态分为列阵峰林、宝剑峰林、群龙峰林、罗汉峰林和叠帽峰林等五大类型，每一类都各具特色，既独立成趣，又与其他类型的峰林相辅相成，组成雄奇浩瀚的景观。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/qlsdwy.jpg" alt="黔灵山动物园">
+                <div class="description">
+                    <h3>黔灵山动物园</h3>
+                    <p>位于贵阳市的一座动物园
+                        坐落在贵阳黔灵公园群山峻岭之中的黔灵山动物园，位于杖钵锋山坳台地上，是一座繁育、研究野生动物，探索自然奥秘的园地。</p>
+                    <p><strong style=“color:red;”>注意，小心猴子伤人！</strong></p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 清凉避暑 -->
+        <div class="section" id="cooling">
+            <h2>清凉避暑</h2>
+            <div class="scenic-spot">
+                <img src="./img/FG/wmdcy.webp" alt="乌蒙大草原">
+                <div class="description">
+                    <h3>乌蒙大草原</h3>
+                    <p>位于六盘水盘州市乌蒙镇与坪地彝族乡境内，是西南地区面积最大、海拔最高的天然草场，年平均气温仅11.1℃。
+                        这里有10万亩万紫千红的高原矮杜鹃林，有绿境一般的高原湖泊天池，有极为罕见的自然景观——草原佛光，还有云海奇观、日出日落等景观。
+                    </p>
+                    <a href="./xijiang.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/wfh.webp" alt="万峰湖">
+                <div class="description">
+                    <h3>万峰湖</h3>
+                    <p>万峰湖位于兴义市东南部，是兴义国家地质公园的重要组成部分，被称为“野钓天堂”，绝对是游玩山水、坐船垂钓的不二之选。万峰湖沿岸的峰林、石林、溶洞密布，构成众多的景观景点。这里烟波浩渺，树木浓郁，水鸟云集，气候凉爽宜人，重峦叠嶂，一日三景。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/njdxg.webp" alt="南江大峡谷">
+                <div class="description">
+                    <h3>南江大峡谷</h3>
+                    <p>南江大峡谷漂流点位于贵阳市开阳县南江乡，距贵阳市区约50公里，有休闲漂流和激情漂流两种。
+                        漂流过程中可沿途一览南江大峡谷的风光，是趣味、激情与山水观光相融的避暑优选之地。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/ggh.webp" alt="高过河">
+                <div class="description">
+                    <h3>高过河</h3>
+                    <p>位于黔东南州镇远县城西北34公里处的羊场镇。这里年平均气温14.5度，有“休闲避暑胜地，度假漂流天堂”之称。高过河漂流河道全长5000米，漂流用时约3小时，险滩11处，落差高达200米，集惊、险、奇、美、幽于一体。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/zjd.webp" alt="织金洞">
+                <div class="description">
+                    <h3>织金洞</h3>
+                    <p>“黄山归来不看岳，织金洞外无洞天”。织金洞世界地质公园位于毕节市织金县，这里有着凉爽的溶洞气候，是夏日避暑好去处。</p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/sebh.webp" alt="十二背后">
+                <div class="description">
+                    <h3>十二背后</h3>
+                    <p>十二背后旅游风景区位于遵义市绥阳县境内，主要由双河溶洞、油桐溪地缝、清溪峡三部分组成。
+                        这里有亚洲最长的溶洞——双河溶洞。双河溶洞的景观十分丰富，有地下河、地下瀑布、地下梯田、卷曲石、石膏晶花等。地下裂缝是双河溶洞洞穴系统最完整、最具趣味性的洞穴之一
+                        。</p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 避世村落 -->
+        <div class="section" id="villages">
+            <h2>避世村落</h2>
+            <div class="scenic-spot">
+                <img src="./img/FG/gpmx.webp" alt="高坡苗乡">
+                <div class="description">
+                    <h3>高坡苗乡</h3>
+                    <p>高坡地如其名，其平均海拔达到了1500米，最高海拔1700米，可以说是贵阳海拔最高的地区之一。这里的云顶草原、皇帝坡等地区已经成为人们露营、看日出日落、欣赏星空和云海的绝佳场所。自驾在高坡的路上，感觉像是到达了“草原天路”，人的心情会变得更加愉悦。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/ysc.webp" alt="瑶山古寨">
+                <div class="description">
+                    <h3>瑶山古寨</h3>
+                    <p>瑶山古寨坐落于黔南州荔波县西南部，是贵州唯一的白裤瑶聚居村落，也是中国少数民族特色村寨、中国传统村落、中国陀螺之乡。寨子里，有人背着竹背篓走街串巷，有人牵着老水牛从田间归来，还有人坐在自家门前一针一线做着刺绣……夕阳西下，袅袅炊烟从老木房顶升腾而起，原汁原味的山村生活场景尽数呈现。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/xnhc.webp" alt="下纳灰村">
+                <div class="description">
+                    <h3>下纳灰村</h3>
+                    <p>你也许知道万峰林，但不一定知道下纳灰。下纳灰村位于黔西南州兴义市万峰林景区中下部，全年平均气温18℃。沿着下纳灰村的小路漫步，一路可见万峰林的绝美风光，也能邂逅布依村寨的悠闲浪漫，纳灰河蜿蜒流淌，千年古榕静静矗立，村中有八音坐唱、舞狮、唢呐、布依傩仪舞等民族文艺。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/ysc.webp" alt="云舍村">
+                <div class="description">
+                    <h3>云舍村</h3>
+                    <p>云舍村，位于铜仁市江口县太平镇，梵净山太平河景区内，是一个集山、水、洞、民俗文化于一身的古朴村寨，被誉为“中国土家第一村”。在这里，人们过着简单而宁静的生活，整个村子古朴幽然、宁静祥和，漫步村中，有一种“采菊东篱下，悠然见南山”的感觉。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/hmc.webp" alt="花茂村">
+                <div class="description">
+                    <h3>花茂村</h3>
+                    <p>花茂村位于遵义市播州区枫香镇，是红色旅游和乡村旅游结合的旅游景区。这里是“记得住乡愁的地方”，独特的田园风光别具魅力，有陶艺文化创意一条街、九丰现代农业园、顺然农场、湿地驿站、红色之家、乡愁小道等景点。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 悠游古镇 -->
+        <div class="section" id="towns">
+            <h2>悠游古镇</h2>
+            <div class="scenic-spot">
+                <img src="./img/FG/qygz.webp" alt="青岩古镇">
+                <div class="description">
+                    <h3>青岩古镇</h3>
+                    <p>以石砌墙、以石铺路、以石筑桥……位于贵阳市花溪区的青岩古镇被专家学者们赞誉为“石头的绝唱”，是一座名副其实的“石头城”。青岩古镇建筑依山就势，城墙用巨石筑于悬崖上，保留了众多明清古建筑。这里的古石板小巷是一大特色，在这里感受历史、看石头砌成的风景、拍照都很不错。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/zygz.webp" alt="镇远古城">
+                <div class="description">
+                    <h3>镇远古城</h3>
+                    <p>镇远是一座历史悠久的古城，坐落在黔东南州镇远县㵲阳河畔。这座拥有2000多年历史的文化古城，人文古迹众多，自然风光旖旎。镇远古城被㵲阳河分为了两部分，北岸为旧府城，南岸为旧卫城，远观颇似太极图。整个古城处于㵲阳河峡谷之间，两边高山环绕，可谓“九山抱一水，一水分两城”。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/bagz.webp" alt="丙安古镇">
+                <div class="description">
+                    <h3>丙安古镇</h3>
+                    <p>背依青山，三面环水，一步一景，一景一画。遵义赤水市的丙安古镇是川盐入黔古盐道著名驿站和商品集散地，被誉为“千年军商古城堡”。这里一半是诗意，一半是生活。门口闲坐的老人、街上跑来跑去的小猫小狗、街边店铺的炊烟袅袅，处处都透露着浓浓的烟火气息。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/tltbgz.webp" alt="天龙屯堡古镇">
+                <div class="description">
+                    <h3>天龙屯堡古镇</h3>
+                    <p>天龙屯堡古镇位于安顺市平坝区，是一个具有600多年历史，展现“大明遗风”的人文景观，是典型的屯堡古镇。这里聚居着一支与众不同的汉族群体，他们的口音、服饰、民居建筑及生活习俗与周围村寨迥异，被称为屯堡人，他们的服饰被称为明代服饰的活标本。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/xsgz.webp" alt="下司古镇">
+                <div class="description">
+                    <h3>下司古镇</h3>
+                    <p>下司古镇位于黔东南州凯里市西南28公里，这里地势险要，山清水秀，风景如画。古镇依河而建，青石板路两旁，明清时期的古建筑错落有致，飞檐翘角在阳光下显得格外古朴典雅，一砖一瓦，都透露着岁月的痕迹。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 红色缅怀 -->
+        <div class="section" id="red">
+            <h2>红色缅怀</h2>
+            <div class="scenic-spot">
+                <img src="./img/FG/hpd.webp" alt="红飘带长征数字科技艺术馆">
+                <div class="description">
+                    <h3>红飘带长征数字科技艺术馆</h3>
+                    <p>红飘带位于贵阳市双龙航空港经济区。由全域行浸数字演艺《红飘带·伟大征程》《红飘带·多彩飞越》两大部分组成。其中，《红飘带·多彩飞越》是8K电影级巨型LED球幕飞行影院的首演剧目，观者犹如飞行于多彩贵州壮美山河之上，纵览旖旎风光。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/xfjzy.webp" alt="息烽集中营革命历史纪念馆">
+                <div class="description">
+                    <h3>息烽集中营革命历史纪念馆</h3>
+                    <p>息烽集中营位于贵阳市息烽县，是抗战期间国民党坚持“消极抗日、积极反共”的反动政策而设立的关押中共党人和爱国进步人士的最大秘密监狱。参观息烽集中营，犹如重温一部血火交织的历史，革命先烈在黑暗的囚牢里与敌人展开不屈不挠的斗争，他们英雄不屈，谱写出一曲可歌可泣的正气之歌。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/zyhyhz.webp" alt="遵义会议会址">
+                <div class="description">
+                    <h3>遵义会议会址</h3>
+                    <p>遵义会议纪念馆位于遵义市红花岗区，包括遵义会议会址和遵义会议陈列馆。遵义会议陈列馆设置有《遵义会议伟大转折》专题陈列，展览以红军长征为主轴线，全面系统、生动详实地展现遵义会议伟大转折历史意义和红军长征、遵义会议、转战贵州的重大历史史实。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/lpqj.webp" alt="黎平翘街">
+                <div class="description">
+                    <h3>黎平翘街</h3>
+                    <p>黎平翘街建于明洪武十八年，历史悠久，两旁的明清建筑古色古香。1934年12月18日，著名的“黎平会议”在此处召开，谱写了中国革命光辉的一页。游翘街，听红色故事，品红色文化，学习红军长征精神。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/tzgz.webp" alt="土城古镇">
+                <div class="description">
+                    <h3>土城古镇</h3>
+                    <p>土城古镇位于遵义市习水县，这里民风淳朴
+                        、文化遗产丰富，曾被誉为长征路上的红宝石，地球红飘带上的明珠。这里有青杠坡战斗遗址文化园、全国唯一以女红军为主题的女红军纪念馆、四渡赤水纪念馆、最具土城特色的“十八帮”文化……走进这儿，你会被这厚重的红色文化和人文历史所折服。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 亲子研学 -->
+        <div class="section" id="family">
+            <h2>亲子研学</h2>
+            <div class="scenic-spot">
+                <img src="./img/FG/ty.webp" alt="平塘中国天眼">
+                <div class="description">
+                    <h3>平塘中国天眼</h3>
+                    <p>随着“中国天眼”的建设，距其最近的黔南州平塘县克度镇，一跃成为世人瞩目的“天文小镇”。天文小镇设有天文体验馆、时光塔、天幕街、南仁东纪念馆、星际家园、航龙湾、天文时光村等设施，让人踏入小镇就能感受到满满的“科技感”。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/gzsbwg.webp" alt="贵州省博物馆">
+                <div class="description">
+                    <h3>贵州省博物馆</h3>
+                    <p>贵州省博物馆老馆位于贵阳市云岩区北京路，新馆位于贵阳市观山湖区林城东路中段北侧。目前藏品总数已积累至8万余件。民族文物为贵博馆藏亮点，其中中国苗族服饰库和中国苗族银饰库位居全国第一。另外，馆藏贵州古生物化石，旧石器时代出土文物以及反映地方历史人文和文化多样性的各类文物，也是贵州省博物馆的亮点。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/gzszbwg.webp" alt="贵州省地质博物馆">
+                <div class="description">
+                    <h3>贵州省地质博物馆</h3>
+                    <p>贵州省地质博物馆位于贵阳市观山湖区西南云潭南路与兴筑西路交叉口，是贵州建筑面积最大的自然科学类博物馆。馆内常设神秘贵州厅、多彩贵州厅、富饶贵州厅、奋进贵州厅4个主题展厅，集中展示贵州作为“古生物王国”“沉积岩王国”“喀斯特王国”的独特魅力。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/gzsmzbwg.webp" alt="贵州省民族博物馆">
+                <div class="description">
+                    <h3>贵州省民族博物馆</h3>
+                    <p>博物馆藏品主要以中国西南各少数民族，特别是贵州18个世居民族的传统服饰、银饰、面具、生产、生活用品、民族文献古籍等。</p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+            <div class="scenic-spot">
+                <img src="./img/FG/liupanssx.webp" alt="六盘水“三线”建设博物馆">
+                <div class="description">
+                    <h3>六盘水“三线”建设博物馆</h3>
+                    <p>“三线”建设博物馆位于六盘水市钟山区荷城街道老城区内，是国内首个以“三线建设”为主题的博物馆。馆内收藏了“三线”建设时期极具代表性的生产工具、生活用具以及历史文献、歌曲、等。馆内以特殊历史时期为背景，展现了我国“自力更生，艰苦奋斗，大力协同，无私奉献”的“三线”建设特殊历史。
+                    </p>
+                    <a href="./link1.html">了解更多</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const links = document.querySelectorAll('.quick-links a');
+        links.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                window.scrollTo({
+                    top: targetElement.offsetTop - document.querySelector('.quick-links').offsetHeight - document.querySelector('.navbar').offsetHeight,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+</script>
+
+
+
+</html>
