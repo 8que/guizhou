@@ -5,24 +5,256 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
+    <link rel="icon" type="image/png" href="img/2.png">
+    <link rel="stylesheet" type="text/css" href="CSS/nabar.css">
     <title>多彩贵州</title>
     <style>
         .navbar {
-    background-color: rgba(26, 84, 155, 0.948); /* 更换主题色 */
-    /* 半透明效果 */
-    transition: background-color 0.5s ease;
-    /* 添加过渡效果 */
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+            background-color: rgba(26, 84, 155, 0.948);
+            /* 更换主题色 */
+            /* 半透明效果 */
+            transition: background-color 0.5s ease;
+            /* 添加过渡效果 */
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* 添加阴影效果 */
+        }
+
+        .navbar a {
+            color: #edf2fb;
+            /* 更换主题色 */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ccdff3;
+            /* 更换主题色 */
+            /* 半透明效果 */
+            color: black;
+        }
+
+        .navbar .left {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .right {
+            display: flex;
+            align-items: center;
+        }
+
+        /* 尾 */
+        footer {
+            background-color: #c1d3fe;
+            /* 更换主题色 */
+            color: #333;
+            /* 更换文字颜色 */
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 80px;
+            /* 增加与上一个板块的距离 */
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 5px;
+            min-width: 150px;
+        }
+
+        .footer-section h2 {
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #333;
+            /* 更换文字颜色 */
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        /* zyfengg*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100vw;
+            height: auto;
+        }
+
+        section,
+        #footer {
+            height: 100vh;
+            position: relative;
+            color: rgba(255, 255, 255, .8);
+            font-size: 10vh;
+            /* 设置字体 */
+            font-family: 'modern_no._20regular',
+                serif;
+            /* 文字阴影 */
+            text-shadow: 4px 4px rgb(46, 43, 43);
+            /* 弹性布局 */
+            display: flex;
+            /* 水平居中 */
+            justify-content: center;
+            /* 垂直居中 */
+            align-items: center;
+        }
+
+        #footer {
+            background-color: #c0b5aa;
+            height: 50vh;
+            color: #fff;
+            font-size: 20vh;
+        }
+
+        .img {
+            overflow: hidden;
+            /* 背景图片不重复 */
+            background-repeat: no-repeat;
+            /* 背景图片位置：居中 */
+            background-position: center;
+            /* 背景图片固定 */
+            background-attachment: fixed;
+            background-size: cover;
+            /* 禁止用户误选中 */
+            user-select: none;
+
+        }
+
+
+        #img-one {
+            background-image: url(/img/img2.jpg);
+            background-size: cover;
+        }
+
+        #img-two {
+            background-image: url(/img/img4.jpg);
+        }
+
+        .content-one {
+            background: url(/img/img2.jpg) no-repeat fixed center;
+            background-size: cover;
+        }
+
+        .content-two {
+            background: url(/img/img1.jpg) no-repeat fixed center;
+            background-size: cover;
+        }
+
+        .content-three {
+            background: url(/img/img3.jpg) no-repeat fixed center;
+            background-size: cover;
+        }
+
+        .text-box {
+            width: 100%;
+            height: 50%;
+            /* 绝对定位 */
+            position: absolute;
+            bottom: 25%;
+            /* 文字居中 */
+            text-align: center;
+            background-color: rgba(0, 0, 0, .3);
+            /* 旋转中心 */
+            transform-origin: center bottom;
+            /* 扭曲斜切 */
+            transform: skew(0, -8deg);
+
+        }
+
+        .text-box .cnt {
+            display: inline-block;
+            text-align: right;
+            margin: 40px 0 10px;
+            width: 90%;
+            max-width: 990px;
+            transform-origin: right bottom;
+            transform: skew(0, 8deg);
+        }
+
+        .cnt h2 {
+            margin-top: 100px;
+            font-size: 36px;
+            font-family: 'modern_no._20regular',
+                serif;
+            text-shadow: 1px 0px 0px #323232;
+            letter-spacing: 0.3em;
+            /* 大写字母 */
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .cnt p {
+            font-size: 20px;
+            line-height: 1.7;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .cnt a.btn {
+            font-size: 90%;
+            font-family: 'modern_no._20regular',
+                serif;
+            letter-spacing: 0.3em;
+            text-shadow: 1px 0px 0px black;
+            line-height: 2.8;
+            display: inline-block;
+            background-color: #eaeaea;
+            color: #000;
+            border: 3px solid #000;
+            white-space: nowrap;
+            text-decoration: none;
+            padding: 0 20px;
+
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 
@@ -30,7 +262,7 @@
     <!-- 导航栏 -->
     <div class="navbar">
         <div class="left">
-            <a href="./main.html"><img src="./img/2.png" alt="白雀名片"style="width: 55px; height:auto;"></a>
+            <a href="./main.html"><img src="./img/2.png" alt="白雀名片" style="width: 55px; height:auto;"></a>
         </div>
         <div class="right">
             <a href="./index.html">首页</a>
@@ -38,7 +270,7 @@
             <a href="./FG.html">贵州景点</a>
             <a href="./custom.html">贵州风俗</a>
             <a href="./food.html">美食推荐</a>
-            <a href="#about">上分大事</a>
+            <a href="./thing.html">上分大事</a>
         </div>
     </div>
 
@@ -51,9 +283,7 @@
                 <div class="cnt">
                     <h2>风景</h2>
                     <p>
-                        Time would heal almost all wounds . If your wounds have not been healed up , please wait for a
-                        short while.
-                        Life isn't about waiting for the storm to pass . it's about learning to dance in the rain.
+                        The scenery in Guizhou is absolutely breathtaking, with its stunning mountains, lush forests, and picturesque rivers.
                     </p>
                     <p>
                         <a href="./FG.html" class="btn">启 程</a>
@@ -66,12 +296,10 @@
                 <div class="cnt">
                     <h2>美食</h2>
                     <p>
-                        Some of us get dipped in flat, some in satin, some in gloss. But every once in a while you find
-                        someone who"s iridescent, and when you do, nothing will ever compare.
-                        We accept both the good and the bad, andwithout uttering a sound, we continue living.
+                        The cuisine in Guizhou is incredibly delicious, with its unique flavors and diverse dishes that leave a lasting impression.
                     </p>
                     <p>
-                        <a href="./FG.html" class="btn">启 程</a>
+                        <a href="./food.html" class="btn">启 程</a>
                     </p>
                 </div>
             </div>
@@ -81,11 +309,10 @@
                 <div class="cnt">
                     <h2>民俗</h2>
                     <p>
-                        Nobody can go back and start a new beginning , but anyone can start today and make a new ending.
-                        The minute you think of giving up , think of the reason why you held on so long .
+                        The customs in Guizhou are rich and vibrant, showcasing a fascinating blend of traditions and cultural heritage.
                     </p>
                     <p>
-                        <a href="./FG.html" class="btn">启 程</a>
+                        <a href="./custom.html" class="btn">启 程</a>
                 </div>
             </div>
         </section>
@@ -94,39 +321,38 @@
                 <div class="cnt">
                     <h2>上分</h2>
                     <p>
-                        Nobody can go back and start a new beginning , but anyone can start today and make a new ending.
-                        The minute you think of giving up , think of the reason why you held on so long .
+                        The interesting stories and anecdotes from Guizhou are truly captivating, reflecting the region’s rich history and vibrant culture.
                     </p>
                     <p>
-                        <a href="./FG.html" class="btn">启 程</a>
+                        <a href="./thing.html" class="btn">启 程</a>
                 </div>
             </div>
         </section>
-        <section id="footer">FOOTER</section>
+        <section id="footer">敬请期待</section>
     </div>
     <script>
         // JavaScript 代码，用于动态调整导航栏背景颜色
-        window.addEventListener('scroll', function() {
-        var navbar = document.querySelector('.navbar');
-        var scrollPosition = window.scrollY;
-        var containerHeight = document.querySelector('.container').offsetTop;
-        var contentOneHeight = document.querySelector('.content-one').offsetTop;
-        var contentTwoHeight = document.querySelector('.content-two').offsetTop;
-        var contentThreeHeight = document.querySelector('.content-three').offsetTop;
+        window.addEventListener('scroll', function () {
+            var navbar = document.querySelector('.navbar');
+            var scrollPosition = window.scrollY;
+            var containerHeight = document.querySelector('.container').offsetTop;
+            var contentOneHeight = document.querySelector('.content-one').offsetTop;
+            var contentTwoHeight = document.querySelector('.content-two').offsetTop;
+            var contentThreeHeight = document.querySelector('.content-three').offsetTop;
 
-        // 根据滚动位置调整导航栏背景颜色
-        if (scrollPosition >= containerHeight && scrollPosition < contentOneHeight) {
-            navbar.style.backgroundColor = 'rgba(38, 99, 172, 0.3)'; // container 时的颜色
-        } else if (scrollPosition >= contentOneHeight && scrollPosition < contentTwoHeight) {
-            navbar.style.backgroundColor = 'rgba(38, 99, 172, 0.3)'; // content-one 时的颜色
-        } else if (scrollPosition >= contentTwoHeight && scrollPosition < contentThreeHeight) {
-            navbar.style.backgroundColor = 'rgba(174, 168, 164, 0.4)'; // content-two 时的颜色
-        } else if (scrollPosition >= contentThreeHeight) {
-            navbar.style.backgroundColor = 'rgba(147, 149, 143, 0.4)'; // content-three 时的颜色
-        } else {
-            navbar.style.backgroundColor = 'rgba(38, 99, 172, 1)'; // 初始颜色
-        }
-    });
+            // 根据滚动位置调整导航栏背景颜色
+            if (scrollPosition >= containerHeight && scrollPosition < contentOneHeight) {
+                navbar.style.backgroundColor = 'rgba(38, 99, 172, 0.3)'; // container 时的颜色
+            } else if (scrollPosition >= contentOneHeight && scrollPosition < contentTwoHeight) {
+                navbar.style.backgroundColor = 'rgba(38, 99, 172, 0.3)'; // content-one 时的颜色
+            } else if (scrollPosition >= contentTwoHeight && scrollPosition < contentThreeHeight) {
+                navbar.style.backgroundColor = 'rgba(174, 168, 164, 0.4)'; // content-two 时的颜色
+            } else if (scrollPosition >= contentThreeHeight) {
+                navbar.style.backgroundColor = 'rgba(147, 149, 143, 0.4)'; // content-three 时的颜色
+            } else {
+                navbar.style.backgroundColor = 'rgba(38, 99, 172, 1)'; // 初始颜色
+            }
+        });
     </script>
 </body>
 

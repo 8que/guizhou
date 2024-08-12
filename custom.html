@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>贵州习俗</title>
+    <title>贵州风俗</title>
+    <link rel="icon" type="image/png" href="img/2.png">
     <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
     <style>
+        .navbar {
+            background-color: #f0f8ff5e;
+            /* 更换主题色 */
+        }
+
         body {
-            display: flex;
             flex-direction: column;
             align-items: center;
             background-color: rgb(243, 230, 241);
@@ -20,6 +26,8 @@
             height: 550px;
             display: flex;
             margin-top: 20px;
+            margin-left: 150px;
+            margin-right: 0;
         }
 
         .box {
@@ -36,20 +44,20 @@
             align-items: center;
         }
 
-        .box > a {
+        .box>a {
             display: block;
             width: 100%;
             height: 85%;
         }
 
-        .box > a > img {
+        .box>a>img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: .5s;
         }
 
-        .box > span {
+        .box>span {
             font: 200 30px '优设标题黑';
             text-align: center;
             height: 15%;
@@ -62,14 +70,15 @@
             flex-basis: 40%;
         }
 
-        .box:hover > a > img {
+        .box:hover>a>img {
             width: 100%;
             height: 100%;
         }
 
         .content {
             width: 80%;
-            margin-top: 20px;
+            margin-top: 50px;
+            margin-left: 100px;
         }
 
         .section-title {
@@ -85,6 +94,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- 导航栏 -->
     <div class="navbar">
@@ -104,19 +114,19 @@
     <!-- 手风琴风格模块 -->
     <div class="shell">
         <div class="box">
-            <a href="link1.html"><img src="./img/1.jpg" alt="民族风情"></a>
+            <a href="link1.html"><img src="./img/img3.jpg" alt="民族风情"></a>
             <span>民族风情</span>
         </div>
         <div class="box">
-            <a href="link1.html"><img src="./img/05.png" alt="民族节日"></a>
+            <a href="link1.html"><img src="./img/jr.jpg" alt="民族节日"></a>
             <span>民族节日</span>
         </div>
         <div class="box">
-            <a href="link1.html"><img src="./img/03.png" alt="民族歌舞"></a>
+            <a href="link1.html"><img src="./img/mzgw.jpg" alt="民族歌舞"></a>
             <span>民族歌舞</span>
         </div>
         <div class="box">
-            <a href="link1.html"><img src="./img/02.png" alt="其他"></a>
+            <a href="link1.html"><img src="./img/yj.jpg" alt="其他"></a>
             <span>其他</span>
         </div>
     </div>
@@ -141,20 +151,23 @@
             <div class="section-content">
                 <h3>捉鸡麻将</h3>
                 <p><strong>受欢迎地区：</strong>全贵州省</p>
-                <p><strong>玩法：</strong>捉鸡麻将使用108张牌（去掉字牌），玩家人数为3-4人。庄家起手14张牌，闲家13张牌。可以摸牌、碰牌、杠牌和胡牌，但不能吃牌。捉鸡麻将在普通麻将基础上添加了“鸡”、“豆”、“通行证”等特色元素。鸡分为“幺鸡”和“翻鸡”。幺鸡是1条，翻鸡是根据翻开的牌顺位+1的那张牌。例如，翻开5万，则6万为鸡。捉鸡麻将中的“杠”称为“豆”，只有在有豆的情况下才能胡任何人的牌，否则只能自摸。自摸胡牌，其他3家都要付；点胡，点炮者单独付。不同牌型有不同倍数的计分，例如大对子5倍，小七对10倍，清一色10倍等。</p>
-    
+                <p><strong>玩法：</strong>捉鸡麻将使用108张牌（去掉字牌），玩家人数为3-4人。庄家起手14张牌，闲家13张牌。可以摸牌、碰牌、杠牌和胡牌，但不能吃牌。捉鸡麻将在普通麻将基础上添加了“鸡”、“豆”、“通行证”等特色元素。鸡分为“幺鸡”和“翻鸡”。幺鸡是1条，翻鸡是根据翻开的牌顺位+1的那张牌。例如，翻开5万，则6万为鸡。捉鸡麻将中的“杠”称为“豆”，只有在有豆的情况下才能胡任何人的牌，否则只能自摸。自摸胡牌，其他3家都要付；点胡，点炮者单独付。不同牌型有不同倍数的计分，例如大对子5倍，小七对10倍，清一色10倍等。
+                </p>
+
                 <h3>贵阳麻将</h3>
                 <p><strong>受欢迎地区：</strong>贵阳市及周边地区</p>
-                <p><strong>玩法：</strong>贵阳麻将使用108张牌，玩家人数为4人。庄家起手14张牌，闲家13张牌。可以摸牌、碰牌、杠牌和胡牌，但不能吃牌。贵阳麻将有“冲锋鸡”、“责任鸡”等特色玩法。冲锋鸡是玩家打出的第一张幺鸡，结算时加倍计算。责任鸡是如果玩家打出的幺鸡被其他玩家碰走，则称为责任鸡，结算时打出鸡牌的玩家需多付1倍。</p>
-    
+                <p><strong>玩法：</strong>贵阳麻将使用108张牌，玩家人数为4人。庄家起手14张牌，闲家13张牌。可以摸牌、碰牌、杠牌和胡牌，但不能吃牌。贵阳麻将有“冲锋鸡”、“责任鸡”等特色玩法。冲锋鸡是玩家打出的第一张幺鸡，结算时加倍计算。责任鸡是如果玩家打出的幺鸡被其他玩家碰走，则称为责任鸡，结算时打出鸡牌的玩家需多付1倍。
+                </p>
+
                 <h3>遵义麻将</h3>
                 <p><strong>受欢迎地区：</strong>遵义市及周边地区</p>
-                <p><strong>玩法：</strong>遵义麻将使用108张牌，玩家人数为4人。庄家起手14张牌，闲家13张牌。可以摸牌、碰牌、杠牌和胡牌，但不能吃牌。遵义麻将有“金鸡”、“银鸡”等特色玩法。金鸡是翻开的牌为9条时，幺鸡为金鸡，结算时1只鸡为2倍。银鸡是翻开的牌为特定牌型时（如7筒和8筒），称为银鸡，结算时有特殊规则。</p>
+                <p><strong>玩法：</strong>遵义麻将使用108张牌，玩家人数为4人。庄家起手14张牌，闲家13张牌。可以摸牌、碰牌、杠牌和胡牌，但不能吃牌。遵义麻将有“金鸡”、“银鸡”等特色玩法。金鸡是翻开的牌为9条时，幺鸡为金鸡，结算时1只鸡为2倍。银鸡是翻开的牌为特定牌型时（如7筒和8筒），称为银鸡，结算时有特殊规则。
+                </p>
             </div>
         </div>
     </div>
     </div>
-    
-</body>
-</html>
 
+</body>
+
+</html>

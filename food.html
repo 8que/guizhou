@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>贵州特色小吃</title>
+    <link rel="icon" type="image/png" href="img/2.png">
     <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
     <style>
+        .navbar {
+            background-color: #f0f8ff5e;
+            /* 更换主题色 */
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -23,6 +29,7 @@
             position: sticky;
             top: 0;
             z-index: 1000;
+            height: 42px;
         }
 
         .tabs a {
@@ -102,19 +109,19 @@
 </head>
 
 <body>
-    <div class="navbar"><!-- 导航栏 -->
+    <div class="navbar">
         <div class="left">
-            <a href="./main.html">logo</a>
+            <a href="./main.html"><img src="./img/2.png" alt="白雀名片" style="width: 55px; height:auto;"></a>
         </div>
         <div class="right">
             <a href="./index.html">首页</a>
-            <a href="#news">关于家乡</a>
-            <a href="#contact">家乡景点</a>
-            <a href="#about">美食推荐</a>
-            <a href="#about">贵州趣事</a>
+            <a href="./index2.html">关于贵州</a>
+            <a href="./FG.html">贵州景点</a>
+            <a href="./custom.html">贵州风俗</a>
+            <a href="./food.html">美食推荐</a>
+            <a href="./thing.html">上分大事</a>
         </div>
     </div>
-
 
     <div class="tabs"><!-- 切换栏 -->
         <a href="#guiyang" onclick="showContent('guiyang')">贵阳</a>
@@ -227,84 +234,84 @@
 
     <div class="content" id="zunyi"><!-- 遵义特色小吃展示 -->
         <div class="product">
-            <img src="./img/zyyrf.jpg" alt="遵义羊肉粉">>
+            <img src="./img/food/zyyrf.jpg" alt="遵义羊肉粉">>
             <div class="description">
                 <h3>遵义羊肉粉</h3>
                 <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
             </div>
         </div>
         <div class="product">
-            <img src="./img/nbhgb.jpg" alt="南白黄糕粑">
+            <img src="./img/food/nbhgb.jpg" alt="南白黄糕粑">
             <div class="description">
                 <h3>南白黄糕粑</h3>
                 <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
             </div>
         </div>
         <div class="product">
-            <img src="./img/yxlf.jpg" alt="鸭溪凉粉">
+            <img src="./img/food/yxlf.jpg" alt="鸭溪凉粉">
             <div class="description">
                 <h3>鸭溪凉粉</h3>
                 <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
             </div>
         </div>
         <div class="product">
-            <img src="./img/liuermamp.jpg" alt="刘二妈米皮">>
+            <img src="./img/food/liuermamp.jpg" alt="刘二妈米皮">>
             <div class="description">
                 <h3>刘二妈米皮</h3>
                 <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
             </div>
         </div>
         <div class="product">
-            <img src="./img/zyjdg.jpg" alt="遵义鸡蛋糕">
+            <img src="./img/food/zyjdg.jpg" alt="遵义鸡蛋糕">
             <div class="description">
                 <h3>遵义鸡蛋糕</h3>
                 <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
             </div>
         </div>
         <div class="product">
-            <img src="./img/dbyy.jpg" alt="蛋包洋芋">
+            <img src="./img/food/dbyy.jpg" alt="蛋包洋芋">
             <div class="description">
                 <h3>蛋包洋芋</h3>
                 <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
             </div>
         </div>
         <div class="product">
-            <img src="./img/lbzeg.jpg" alt="凉拌折耳根">>
+            <img src="./img/food/lbzeg.jpg" alt="凉拌折耳根">
             <div class="description">
                 <h3>凉拌折耳根</h3>
                 <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
             </div>
         </div>
         <div class="product">
-            <img src="./img/zydhm.jpg" alt="遵义豆花面">
+            <img src="./img/food/zydhm.jpg" alt="遵义豆花面">
             <div class="description">
                 <h3>遵义豆花面</h3>
                 <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
             </div>
         </div>
         <div class="product">
-            <img src="./img/wjdfy.jpg" alt="乌江豆腐鱼">
+            <img src="./img/food/wjdfy.jpg" alt="乌江豆腐鱼">
             <div class="description">
                 <h3>乌江豆腐鱼</h3>
                 <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
             </div>
         </div>
         <div class="product">
-            <img src="./img/fyhj.jpg" alt="蜂岩黄饺">>
+            <img src="./img/food/fyhj.jpg" alt="蜂岩黄饺">>
             <div class="description">
                 <h3>蜂岩黄饺</h3>
                 <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
             </div>
         </div>
         <div class="product">
-            <img src="./img/wjyzty.jpg" alt="吴家油炸汤圆">
+            <img src="./img/food/wjyzty.jpg" alt="吴家油炸汤圆">
             <div class="description">
                 <h3>吴家油炸汤圆</h3>
                 <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
             </div>
         </div>
         <div class="product">
-            <img src="./img/wjy.jpg" alt="乌江鱼">
+            <img src="./img/food/wjy.jpg" alt="乌江鱼">
             <div class="description">
                 <h3>乌江鱼</h3>
                 <p>遵义羊肉粉是贵州省遵义市的一道特色小吃，用鲜羊肉熬汤，浇米粉，放羊肉片、调料而食，口感美味。</p>
@@ -617,29 +624,29 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
-        showContent('guiyang');
-    });
-
-    function showContent(id) {
-        const contents = document.querySelectorAll('.content');
-        const tabs = document.querySelectorAll('.tabs a');
-        
-        // 移除所有内容的 active 类
-        contents.forEach(content => {
-            content.classList.remove('active');
+            showContent('guiyang');
         });
 
-        // 移除所有标签的 active 类
-        tabs.forEach(tab => {
-            tab.classList.remove('active');
-        });
+        function showContent(id) {
+            const contents = document.querySelectorAll('.content');
+            const tabs = document.querySelectorAll('.tabs a');
 
-        // 添加选中内容的 active 类
-        document.getElementById(id).classList.add('active');
+            // 移除所有内容的 active 类
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
 
-        // 添加选中标签的 active 类
-        document.querySelector(`.tabs a[href="#${id}"]`).classList.add('active');
-    }
+            // 移除所有标签的 active 类
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // 添加选中内容的 active 类
+            document.getElementById(id).classList.add('active');
+
+            // 添加选中标签的 active 类
+            document.querySelector(`.tabs a[href="#${id}"]`).classList.add('active');
+        }
     </script>
 </body>
 
