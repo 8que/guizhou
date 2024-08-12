@@ -1,6 +1,8 @@
 /* 导航栏样式 */
 .navbar {
-    background-color: #abc4ff; /* 更换主题色 */
+    .navbar {
+        background-color:#f0f8ff; /* 更换主题色 */
+    }
     /* 半透明效果 */
     transition: background-color 0.5s ease;
     /* 添加过渡效果 */
@@ -12,17 +14,18 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
 }
 
 .navbar a {
-    color: #edf2fb; /* 更换主题色 */
+    color: #000000; /* 更换主题色 */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .navbar a:hover {
-    background-color: #b6ccfe; /* 更换主题色 */
+    background-color: #ccdff3; /* 更换主题色 */
     /* 半透明效果 */
     color: black;
 }
@@ -39,7 +42,7 @@
 
 /* 尾 */
 footer {
-    background-color: #c1d3fe; /* 更换主题色 */
+    background-color: #f0f8ff5e; /* 更换主题色 */
     color: #333; /* 更换文字颜色 */
     padding: 10px 0;
     text-align: center;
